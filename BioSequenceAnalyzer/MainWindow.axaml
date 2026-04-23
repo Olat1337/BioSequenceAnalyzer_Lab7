@@ -1,0 +1,12 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="BioSequenceAnalyzer.MainWindow"
+        Title="Sekwencer DNA" Width="500" Height="600">
+	<StackPanel Margin="20" Spacing="15">
+		<TextBlock Text="Wprowadz sekwencje DNA:" FontWeight="Bold" FontSize="16"/>
+		<TextBox Name="InputTextBox" Height="100" TextWrapping="Wrap" AcceptsReturn="True" Watermark="np. ACGT..."/>
+		<Button Content="Zlicz sekwencje" HorizontalAlignment="Center" Padding="10" Click="AnalyzeButton_Click"/>
+		<TextBlock Text="Wyniki:" FontWeight="Bold" FontSize="16"/>
+		<TextBox Name="ResultsTextBox" Height="300" IsReadOnly="True" TextWrapping="Wrap"/>
+	</StackPanel>
+</Window>
